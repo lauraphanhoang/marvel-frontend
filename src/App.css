@@ -1,17 +1,5 @@
 /* ---------------------------COMMON RULES---------------------------*/
 
-/* .roboto-regular {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  font-style: normal;
-} */
-
 body {
   background-color: black;
   color: white;
@@ -20,7 +8,6 @@ body {
 h1 {
   font-size: 20px;
   line-height: 40px;
-  /* color: #f3e0cf; */
   font-family: "InspireTWDC";
   font-weight: 700;
   text-transform: uppercase;
@@ -31,10 +18,6 @@ h1 {
   width: 1200px;
   margin: 0 auto;
 }
-/* main img {
-  width: 200px;
-  object-fit: contain;
-} */
 
 a {
   color: white;
@@ -46,12 +29,9 @@ a {
   width: 300px;
   display: flex;
   margin: auto;
-  /* position: fixed; */
   justify-content: center;
   top: 50%;
   left: 50%;
-  /* margin-top: -50px;
-  margin-left: -50px; */
   animation: rotate 2s linear infinite;
 }
 
@@ -74,7 +54,6 @@ header {
 }
 
 header .container {
-  /* border: white 1px dotted; */
   display: flex;
   justify-content: center;
   max-width: 1280px;
@@ -84,7 +63,6 @@ header .container {
 }
 
 .container-menu {
-  /* border: green 6px dotted; */
   width: 1200px;
   display: flex;
   justify-content: space-between;
@@ -94,13 +72,11 @@ header .container {
 .menu {
   display: flex;
   flex: 1;
-  /* background-color: orange; */
   gap: 30px;
 }
 .login-signup {
   display: flex;
   gap: 30px;
-  /* background-color: pink; */
 }
 
 .avengers {
@@ -110,7 +86,6 @@ header button {
   height: 50px;
   font-weight: 600;
   font-size: 15px;
-  /* border: white 2px solid; */
   border: none;
   cursor: pointer;
   background-color: black;
@@ -141,24 +116,23 @@ header button {
   margin: 50px auto;
   line-height: 20px;
 }
+
 .banniere-characters {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-end;
   max-width: 1200px;
+  height: 600px;
   margin: 0px auto;
   background-image: url("src/assets/Marvel-Avengers-Wallpaper.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
-  height: 600px;
   gap: 10px;
-  /* align-items: self-end; */
 }
+
 .title-character {
-  /* background-color: pink; */
   margin-left: 100px;
   width: 300px;
   font-size: 40px;
@@ -166,7 +140,7 @@ header button {
 
 .search input {
   margin-left: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   height: 10px;
   width: 1000px;
   padding: 10px 5px;
@@ -184,13 +158,10 @@ header button {
   display: flex;
   padding: 20px;
   margin: 20px;
-  /* border: #c6cacb 1px solid; */
   overflow: scroll;
   border-radius: 200px 200px 20px 20px;
 }
 .character {
-  /* padding: 20px 0; */
-  /* border: #c6cacb 1px solid; */
   border-radius: 30px;
   width: 300px;
   height: 400px;
@@ -204,8 +175,6 @@ header button {
   position: absolute;
   right: 10px;
   top: 10px;
-  /* border: white 1px solid;
-  border-radius: 50px; */
 }
 .characters-images {
   border-radius: 50%;
@@ -231,7 +200,6 @@ header button {
 }
 /* --------------------------- CHARACTER INFOS ---------------------------*/
 .container-character {
-  /* border: green 10px solid; */
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -243,7 +211,6 @@ header button {
   display: flex;
   align-items: center;
   width: 1000px;
-  /* background: orange; */
   padding: 20px;
   gap: 30px;
 }
@@ -260,7 +227,6 @@ header button {
   padding: 10px;
 }
 .banniere-comics {
-  /* background-color: black; */
   display: flex;
   flex-direction: column;
   max-width: 1200px;
@@ -289,7 +255,6 @@ header button {
 }
 
 .all-comics {
-  /* background-color: pink; */
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -312,35 +277,31 @@ header button {
   align-items: center;
 }
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   display: flex;
-  /* border: 1px solid white; */
+
   padding: 10px;
   width: 200px;
   height: 300px;
   overflow-x: scroll;
   position: relative;
   background-color: transparent;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  /* text-align: center; */
+
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -350,15 +311,11 @@ header button {
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  /* background-color: #bbb; */
   color: white;
 }
 
-/* Style the back side */
 .flip-card-back {
-  /* background-color: dodgerblue; */
   color: white;
   transform: rotateY(180deg);
 }
@@ -369,7 +326,6 @@ header button {
   flex-wrap: nowrap;
   overflow-y: scroll;
   justify-content: space-between;
-  /* border: 2px solid pink; */
   gap: 40px;
 }
 .comics-infos {
@@ -396,12 +352,11 @@ header button {
 }
 .infos {
   overflow-x: scroll;
-  /* border: 1px solid pink; */
+
   height: 200px;
 }
 
 .container-comic {
-  /* border: white 2px solid; */
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -422,8 +377,6 @@ header button {
 .left {
   display: flex;
   justify-content: center;
-  /* border: white 2px solid; */
-
   flex: 1;
 }
 
@@ -431,7 +384,6 @@ header button {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* border: purple 2px solid; */
   flex: 1;
 }
 .no-image {
@@ -442,7 +394,6 @@ header button {
 
 .container-signup,
 .container-login {
-  /* background-color: pink; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,7 +405,6 @@ header button {
 }
 
 .signup-left {
-  /* background-color: orange; */
   text-align: center;
 }
 .spiderman {
@@ -462,7 +412,6 @@ header button {
 }
 .form {
   margin-left: 200px;
-  /* border: red 1px solid; */
   display: flex;
   align-items: flex-end;
 }
