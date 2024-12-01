@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import spider from "../src/assets/icons8-spider-man-ancien-480.png";
+import loading from "../src/assets/Avenger-Logo-No-Background.png";
 
 const ComicInfos = () => {
   const { id } = useParams();
@@ -27,11 +27,8 @@ const ComicInfos = () => {
   }, [id]);
 
   return isLoading === true ? (
-    <div className="loading">
-      <span>Loading</span>
-      <img src={spider} />
-      <img src={spider} />
-      <img src={spider} />
+    <div className="container">
+      <img className="loading" src={loading} alt="loading page" />{" "}
     </div>
   ) : (
     <>

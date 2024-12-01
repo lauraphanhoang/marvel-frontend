@@ -1,6 +1,6 @@
 /* ---------------------------COMMON RULES---------------------------*/
 
-.roboto-regular {
+/* .roboto-regular {
   font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
@@ -10,7 +10,7 @@
   font-family: "Roboto", serif;
   font-weight: 700;
   font-style: normal;
-}
+} */
 
 body {
   background-color: black;
@@ -20,8 +20,8 @@ body {
 h1 {
   font-size: 20px;
   line-height: 40px;
-  color: #f3e0cf;
-  font-family: "Roboto", serif;
+  /* color: #f3e0cf; */
+  font-family: "InspireTWDC";
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -40,24 +40,18 @@ a {
   color: white;
   text-decoration: none;
 }
-.loading {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1200px;
-  margin: 200px auto;
-  gap: 30px;
-}
-.loading {
-  height: 300px;
-  width: 300px;
-  position: fixed;
 
+.loading {
+  height: auto;
+  width: 300px;
+  display: flex;
+  margin: auto;
+  /* position: fixed; */
+  justify-content: center;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
+  /* margin-top: -50px;
+  margin-left: -50px; */
   animation: rotate 2s linear infinite;
 }
 
@@ -134,26 +128,63 @@ header button {
 .home-container img {
   object-fit: cover;
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
 }
 
 /* --------------------------- CHARACTERS ---------------------------*/
 .container-characters {
-  /* background-color: green; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1300px;
-  margin: 20px auto;
+  max-width: 1200px;
+  margin: 50px auto;
   line-height: 20px;
+}
+.banniere-characters {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: 0px auto;
+  background-image: url("src/assets/Marvel-Avengers-Wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 600px;
   gap: 10px;
+  /* align-items: self-end; */
+}
+.title-character {
+  /* background-color: pink; */
+  margin-left: 100px;
+  width: 300px;
+  font-size: 40px;
+}
+
+.search input {
+  margin-left: 100px;
+  margin-bottom: 50px;
+  height: 10px;
+  width: 1000px;
+  padding: 10px 5px;
+  background-color: #fcf9f9;
+  border-radius: 5px;
+  font-size: 15px;
+}
+::placeholder {
+  padding-left: 30px;
+  color: #5d6061;
+  font-family: "InspireTWDC";
 }
 .character-1 {
   width: 200px;
   display: flex;
   padding: 20px;
-  /* border: #c6cacb 5px solid; */
+  margin: 20px;
+  /* border: #c6cacb 1px solid; */
   overflow: scroll;
   border-radius: 200px 200px 20px 20px;
 }
@@ -169,8 +200,7 @@ header button {
 }
 
 .star-icon {
-  font-size: 25px;
-  padding: 10px;
+  padding: 20px;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -189,22 +219,6 @@ header button {
   object-fit: cover;
 }
 
-.search input {
-  width: 1200px;
-  padding: 10px 5px;
-  background-color: #fcf9f9;
-  /* border: 1px solid #ff111a; */
-  margin: 10px 0;
-  border-radius: 5px;
-  font-size: 15px;
-}
-
-::placeholder {
-  padding-left: 30px;
-  color: #c6cacb;
-  font-family: "InspireTWDC";
-}
-
 .character h1 {
   font-size: 15px;
   padding: 10px;
@@ -215,7 +229,7 @@ header button {
   font-size: 15px;
   text-align: justify;
 }
-
+/* --------------------------- CHARACTER INFOS ---------------------------*/
 .container-character {
   /* border: green 10px solid; */
   display: flex;
@@ -235,10 +249,121 @@ header button {
 }
 .character-infos img {
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
 }
+
+/* --------------------------- COMICS ---------------------------*/
+.main {
+  background-image: url("src/assets/comics-bnw.jpg");
+  padding: 10px;
+}
+.banniere-comics {
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 30px;
+  opacity: 90%;
+
+  gap: 20px;
+}
+
+.title-comic {
+  margin-left: 100px;
+  font-size: 30px;
+}
+
+.container-comics {
+  background-color: black;
+  border-radius: 30px;
+  opacity: 90%;
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  line-height: 20px;
+  padding: 20px;
+}
+
+.all-comics {
+  /* background-color: pink; */
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.all-comics img {
+  width: 200px;
+}
+
+.all-comics h1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.all-comics p {
+  font-size: 15px;
+  text-align: justify;
+  align-items: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  display: flex;
+  /* border: 1px solid white; */
+  padding: 10px;
+  width: 200px;
+  height: 300px;
+  overflow-x: scroll;
+  position: relative;
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* text-align: center; */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: white;
+}
+
+/* Style the back side */
+.flip-card-back {
+  /* background-color: dodgerblue; */
+  color: white;
+  transform: rotateY(180deg);
+}
+/* --------------------------- COMIC ---------------------------*/
+
 .comics {
   display: flex;
   flex-wrap: nowrap;
@@ -248,10 +373,10 @@ header button {
   gap: 40px;
 }
 .comics-infos {
-  border: #c6cacb 5px solid;
+  border: white 2px solid;
   border-radius: 20px;
   padding: 30px;
-  width: 500px;
+  width: 400px;
   height: 500px;
 }
 .comics img {
@@ -275,49 +400,8 @@ header button {
   height: 200px;
 }
 
-/* --------------------------- COMICS ---------------------------*/
-
-.container-comics {
-  /* border: green 10px solid; */
-  display: flex;
-  max-width: 1200px;
-  margin: 20px auto;
-  line-height: 20px;
-}
-
-.container-comics-1 {
-  /* border: pink 2px solid; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.container-comics-1 img {
-  width: 200px;
-}
-
-.all-comics {
-  /* border: 3px solid white;
-   */
-  padding: 10px;
-  width: 200px;
-  height: 500px;
-  overflow-x: scroll;
-  position: relative;
-}
-
-.all-comics h1 {
-  font-size: 10px;
-}
-.all-comics p {
-  font-size: 12px;
-  text-align: justify;
-}
-
-/* --------------------------- COMIC ---------------------------*/
 .container-comic {
-  border: #ff111a 5px solid;
+  /* border: white 2px solid; */
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -349,4 +433,99 @@ header button {
   gap: 30px;
   /* border: purple 2px solid; */
   flex: 1;
+}
+.no-image {
+  height: 300px;
+  object-fit: cover;
+}
+/* --------------------------- SIGN UP / LOGIN---------------------------*/
+
+.container-signup,
+.container-login {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0px auto;
+  gap: 20px;
+  padding: 30px;
+}
+
+.signup-left {
+  /* background-color: orange; */
+  text-align: center;
+}
+.spiderman {
+  width: 200px;
+}
+.form {
+  margin-left: 200px;
+  /* border: red 1px solid; */
+  display: flex;
+  align-items: flex-end;
+}
+.container-form form {
+  border: 1px solid rgb(37, 35, 35);
+  border-radius: 30px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+}
+
+.container-form input {
+  height: 30px;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.button-signup,
+.button-login {
+  cursor: pointer;
+  background-color: #413c3d;
+  border-radius: 30px;
+  height: 30px;
+  border: none;
+  color: white;
+}
+.link {
+  padding: 10px;
+  text-decoration: underline;
+  margin: 0 auto;
+}
+.robot {
+  width: 100px;
+}
+/* ---------------------------FOOTER ---------------------------*/
+
+.container-footer {
+  display: flex;
+  width: 1200px;
+  margin: 30px auto;
+}
+footer {
+  padding: 20px 0px;
+  border-top: white 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 10px;
+}
+
+footer a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* --------------------------- LOADING ---------------------------*/
+.container-loading {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 300px;
 }

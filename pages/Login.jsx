@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import robot from "../src/assets/robot.webp";
 
 const Login = ({ setIsAuthenticated }) => {
   const [email, setEmail] = useState("");
@@ -27,9 +28,9 @@ const Login = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <div className="container">
+    <div className="container-login">
+      <h1>LOGIN</h1>
       <div className="container-form">
-        <h1>Se connecter</h1>
         <form onSubmit={handleLogin}>
           <input
             type="email"
@@ -47,13 +48,16 @@ const Login = ({ setIsAuthenticated }) => {
               setPassword(event.target.value);
             }}
           />
-          <button className="button-signup">Se connecter</button>
+          <button className="button-login">LOGIN</button>
         </form>
       </div>
       <div className="link">
         <Link className="a" to="/user/signup">
-          Pas encore de compte? Inscris-toi !
+          Create an account
         </Link>
+      </div>
+      <div>
+        <img className="robot" src={robot} alt="robot" />
       </div>
     </div>
   );

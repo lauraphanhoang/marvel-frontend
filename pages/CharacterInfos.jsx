@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import sky from "../src/assets/night-sky.jpg";
+import loading from "../src/assets/Avenger-Logo-No-Background.png";
 
 const CharacterInfos = () => {
   const { id } = useParams();
@@ -31,14 +32,24 @@ const CharacterInfos = () => {
   }, [id]);
 
   return isLoading === true ? (
-    <p>Loading...</p>
+    <div className="container">
+      <img className="loading" src={loading} alt="loading page" />{" "}
+    </div>
   ) : (
     <div className="container-character">
       <div className="character-infos">
-        <img
-          src={`${data.thumbnail.path}.${data.thumbnail.extension}`}
-          alt="image"
-        />
+        {data.thumbnail.path ===
+          "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available" ||
+        data.thumbnail.path ===
+          "http://i.annihil.us/u/prod/marvel/i/mg/f/60/4c002e0305708" ? (
+          <img src={sky} />
+        ) : (
+          <img
+            src={`${data.thumbnail.path}.${data.thumbnail.extension}`}
+            alt="image"
+          />
+        )}
+
         <div>
           <h1>{data.name}</h1>
           <p>{data.description}</p>

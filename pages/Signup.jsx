@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
+import spiderman from "../src/assets/spiderman.webp";
 
 const Signup = ({ setIsAuthenticated }) => {
   const [username, setUsername] = useState("");
@@ -33,42 +34,48 @@ const Signup = ({ setIsAuthenticated }) => {
   };
 
   return (
-    <div className="container">
-      <div className="container-form">
-        <h1>S'inscrire</h1>
-        <form onSubmit={handleSignup}>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(event) => {
-              setUsername(event.target.value);
-            }}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(event) => {
-              setEmail(event.target.value);
-            }}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(event) => {
-              setPassword(event.target.value);
-            }}
-          />
-          <button className="button-signup">S'INSCRIRE</button>
-        </form>
-        <div>
+    <div className="container-signup">
+      <h1>SIGN UP</h1>
+      <div className="form">
+        <div className="signup-left">
+          <div className="container-form">
+            <form onSubmit={handleSignup}>
+              <input
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(event) => {
+                  setUsername(event.target.value);
+                }}
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }}
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(event) => {
+                  setPassword(event.target.value);
+                }}
+              />
+              <button className="button-signup">SIGN UP</button>
+            </form>
+          </div>
+
           <div className="link">
             <Link className="a" to="/user/login">
-              Déjà un compte ? Connecte-toi !
+              You already have an account ? Login !
             </Link>
           </div>
+        </div>
+        <div>
+          <img className="spiderman" src={spiderman} alt="spiderman" />
         </div>
       </div>
     </div>

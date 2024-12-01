@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+
+import loading from "../src/assets/Avenger-Logo-No-Background.png";
 import axios from "axios";
 
 const ComicsByCharacter = () => {
@@ -26,7 +28,9 @@ const ComicsByCharacter = () => {
   }, [id]);
 
   return isLoading === true ? (
-    <p>Loading...</p>
+    <div className="container">
+      <img className="loading" src={loading} alt="loading page" />{" "}
+    </div>
   ) : (
     <div className="container">
       <div>

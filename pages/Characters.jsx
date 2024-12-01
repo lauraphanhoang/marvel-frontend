@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import sky from "../src/assets/night-sky.jpg";
 import loading from "../src/assets/Avenger-Logo-No-Background.png";
-import heart from "../src/assets/icons8-aimer-50.png";
 
 const Characters = () => {
   const [name, setName] = useState("");
@@ -37,7 +36,10 @@ const Characters = () => {
     </div>
   ) : (
     <>
-      <div className="container-characters">
+      <div className="banniere-characters">
+        <div className="title-character">
+          <p>CHARACTERS</p>
+        </div>
         <div className="search">
           <input
             type="text"
@@ -49,13 +51,13 @@ const Characters = () => {
           />
         </div>
       </div>
+
       <div className="container-characters">
         {data.results.map((character) => {
           return (
             <div key={character._id} className="character">
               <div className="star-icon">
-                <img src={heart} alt="" />
-                {/* <i className="fa-regular fa-star"></i> */}
+                <i className="fa-regular fa-star"></i>
               </div>
               <div className="character-1">
                 <Link to={`/character/${character._id}`}>
@@ -72,8 +74,10 @@ const Characters = () => {
                       />
                     )}
                   </div>
-                  <h1>{character.name}</h1>
-                  {/* <p>{character.description}</p> */}
+                  <div className="test">
+                    <h1>{character.name}</h1>
+                    <p>{character.description}</p>
+                  </div>
                 </Link>
               </div>
             </div>
