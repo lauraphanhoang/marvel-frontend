@@ -125,7 +125,7 @@ header button {
   max-width: 1200px;
   height: 600px;
   margin: 0px auto;
-  background-image: url("../src/assets/Marvel-Avengers-Wallpaper.jpg");
+  background-image: url("/public/Marvel-Avengers-Wallpaper.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -223,7 +223,7 @@ header button {
 
 /* --------------------------- COMICS ---------------------------*/
 .main {
-  background-image: url("../src/assets/comics-bnw.jpg");
+  background-image: url("/public/comics-bnw.jpg");
   padding: 10px;
 }
 .banniere-comics {
