@@ -14,11 +14,11 @@ Inspiration : marvel.com
 Deploiement sur Netlify : <a  href="https://marvel-lph-project.netlify.app/"  target="_blank"> https://marvel-lph-project.netlify.app/</a>
 
 <p align="center">
-<a  href="https://marvel-lph-project.netlify.app/"><img  src="https://res.cloudinary.com/dkfawp1r9/image/upload/f_auto,q_auto/marvel-homepage" width="500" title="Marvel homepage"  alt="Marvel frontend"></a>
-<a  href="https://marvel-lph-project.netlify.app/"><img  src="https://res.cloudinary.com/dkfawp1r9/image/upload/f_auto,q_auto/marvel-signup" width="500" title="Marvel signup"  alt="Marvel frontend"></a>
+<a  href="https://marvel-lph-project.netlify.app/"><img  src="https://res.cloudinary.com/dkfawp1r9/image/upload/f_auto,q_auto/marvel-homepage" width="300" title="Marvel homepage"  alt="Marvel frontend"></a>
+<a  href="https://marvel-lph-project.netlify.app/"><img  src="https://res.cloudinary.com/dkfawp1r9/image/upload/f_auto,q_auto/marvel-signup" width="300" title="Marvel signup"  alt="Marvel frontend"></a>
 
-<a  href="https://marvel-lph-project.netlify.app/"><img  src="https://res.cloudinary.com/dkfawp1r9/image/upload/f_auto,q_auto/marvel-characters" width="500" title="Marvel characters"  alt="Marvel frontend"></a>
-<a  href="https://marvel-lph-project.netlify.app/"><img  src="https://res.cloudinary.com/dkfawp1r9/image/upload/f_auto,q_auto/marvel-comics" width="500" title="Marvel comics "  alt="Marvel frontend"></a>
+<a  href="https://marvel-lph-project.netlify.app/"><img  src="https://res.cloudinary.com/dkfawp1r9/image/upload/f_auto,q_auto/marvel-characters" width="300" title="Marvel characters"  alt="Marvel frontend"></a>
+<a  href="https://marvel-lph-project.netlify.app/"><img  src="https://res.cloudinary.com/dkfawp1r9/image/upload/f_auto,q_auto/marvel-comics" width="300" title="Marvel comics "  alt="Marvel frontend"></a>
 </p>
 
 
