@@ -74,7 +74,7 @@ const Characters = () => {
                       />
                     )}
                   </div>
-                  <div className="test">
+                  <div className="text">
                     <h1>{character.name}</h1>
                     <p>{character.description}</p>
                   </div>

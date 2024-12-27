@@ -13,34 +13,38 @@ const Header = ({ setIsAuthenticated }) => {
           <img className="logo" src={logo} alt="logo Marvel" />
         </Link>
       </div>
-      <nav className="container-menu">
-        <div className="menu">
-          <button onClick={() => navigate("/characters")}>CHARACTERS</button>
-          <button onClick={() => navigate("/comics")}>COMICS</button>
-          <button onClick={() => navigate("/favoris")}>FAVORIS</button>
-        </div>
-        <div>
-          {token ? (
-            <button
-              className="deconnexion"
-              onClick={() => {
-                Cookies.remove("token");
-                setIsAuthenticated(false);
-                navigate("/");
-              }}
-            >
-              DECONNEXION
-            </button>
-          ) : (
-            <div className="login-signup">
-              <button onClick={() => navigate("/user/signup")}>SIGN UP</button>
-              <button onClick={() => navigate("/user/login")}>LOGIN</button>
-              <img className="avengers" src={avengers} alt="avengers icon" />
-            </div>
-          )}
-        </div>
-        <div></div>
-      </nav>
+      <div className="container">
+        <nav className="container-menu">
+          <div className="menu">
+            <button onClick={() => navigate("/characters")}>CHARACTERS</button>
+            <button onClick={() => navigate("/comics")}>COMICS</button>
+            <button onClick={() => navigate("/favoris")}>FAVORIS</button>
+          </div>
+          <div>
+            {token ? (
+              <button
+                className="deconnexion"
+                onClick={() => {
+                  Cookies.remove("token");
+                  setIsAuthenticated(false);
+                  navigate("/");
+                }}
+              >
+                DECONNEXION
+              </button>
+            ) : (
+              <div className="login-signup">
+                <button onClick={() => navigate("/user/signup")}>
+                  SIGN UP
+                </button>
+                <button onClick={() => navigate("/user/login")}>LOGIN</button>
+                <img className="avengers" src={avengers} alt="avengers icon" />
+              </div>
+            )}
+          </div>
+          <div></div>
+        </nav>
+      </div>
     </header>
   );
 };
